@@ -55,7 +55,7 @@ export default function ClientPage() {
         onSubmit={handleSubmit}
       >
         <input
-          className="p-2 rounded w-full"
+          className="p-2 rounded w-full text-black"
           type="text"
           name="query"
           placeholder="Search a character..."
@@ -76,7 +76,7 @@ export default function ClientPage() {
         <button
           onClick={handleNextPage}
           disabled={page <= 1}
-          className="rounded-full h-12 w-12 disabled:bg-zinc-300 border border-zinc-400 hover:bg-zinc-300"
+          className="rounded-full h-12 w-12 text-black bg-zinc-100 disabled:bg-zinc-400 border border-zinc-400 hover:bg-zinc-300"
         >
           {'<'}
         </button>
@@ -84,7 +84,7 @@ export default function ClientPage() {
         <button
           onClick={handlePrevPage}
           disabled={data.characters.results.length < 20}
-          className="rounded-full h-12 w-12 disabled:bg-zinc-300 border border-zinc-400 hover:bg-zinc-300"
+          className="rounded-full h-12 w-12 text-black bg-zinc-100 disabled:bg-zinc-400 border border-zinc-400 hover:bg-zinc-300"
         >
           {'>'}
         </button>

@@ -1,5 +1,6 @@
 'use client';
 
+import { graphQL_url } from '@/api';
 import { ApolloLink, HttpLink } from '@apollo/client';
 import {
   ApolloNextAppProvider,
@@ -9,7 +10,7 @@ import {
 } from '@apollo/experimental-nextjs-app-support/ssr';
 
 function makeClient() {
-  const httpLink = new HttpLink({ uri: 'https://rickandmortyapi.com/graphql' });
+  const httpLink = new HttpLink({ uri: graphQL_url });
   return new NextSSRApolloClient({
     cache: new NextSSRInMemoryCache(),
     link:
