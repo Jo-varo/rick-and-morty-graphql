@@ -16,7 +16,7 @@ To run this project locally, follow these steps:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/rick-and-morty-graphql.git
+git clone https://github.com/Jo-varo/rick-and-morty-graphql.git
 ```
 2. Navigate to the project directory:
 ```bash
