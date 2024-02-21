@@ -49,7 +49,7 @@ export default function ClientPage() {
   };
 
   return (
-    <div className="p-5 max-w-screen-xl">
+    <main className="p-5 max-w-screen-xl mx-auto">
       <form
         className="flex flex-col items-center gap-2 max-w-lg mx-auto text-md my-4"
         onSubmit={handleSubmit}
@@ -89,6 +89,6 @@ export default function ClientPage() {
           {'>'}
         </button>
       </div>
-    </div>
+    </main>
   );
 }
